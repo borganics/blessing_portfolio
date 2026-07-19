@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibeh Blessing · Medical Virtual Assistant</title>
+    <meta name="description"
+        content="Medical Virtual Assistant · HIPAA Certified · Lab Experience + Admin Expertise · Helping Healthcare Professionals Focus on Patients, Not Paperwork." />
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/favicon.ico" />
+
+    <!-- ===== SOCIAL PREVIEW (Open Graph / Twitter Cards) ===== -->
+    <meta property="og:title" content="Ibeh Blessing · Medical Virtual Assistant" />
+    <meta property="og:description"
+        content="Medical Virtual Assistant · HIPAA Certified · Lab Experience + Admin Expertise · Helping Healthcare Professionals Focus on Patients, Not Paperwork." />
+    <meta property="og:url" content="https://borganics.github.io/blessing_portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://borganics.github.io/blessing_portfolio/assets/blessing.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ibeh Blessing · Medical Virtual Assistant" />
+    <meta name="twitter:description"
+        content="Medical Virtual Assistant · HIPAA Certified · Lab Experience + Admin Expertise · Helping Healthcare Professionals Focus on Patients, Not Paperwork." />
+    <meta name="twitter:image" content="https://borganics.github.io/blessing_portfolio/assets/blessing.jpg" />
+
+    <!-- Font Awesome 6 (stable) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== PROGRESS BAR ===== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ===== NOISE OVERLAY ===== -->
+    <div class="noise-overlay"></div>
+
+    <!-- ===== GLOW TRAIL ===== -->
+    <div class="glow-trail" id="glowTrail"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- ===== GEOMETRIC SHAPES ===== -->
+    <div class="geometric-shapes" id="geometricShapes"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="logo">Blessing<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#work-samples">Samples</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="particles-container" id="particlesContainer"></div>
+        <div class="hero-glow"></div>
+
+        <div class="container hero-container hero-reverse">
+            <!-- LEFT: Content -->
+            <div class="hero-content-right">
+                <div class="hero-badge">✦ Medical Virtual Assistant</div>
+                <h1 class="hero-title">
+                    I Help Busy Healthcare Professionals<br />
+                    <span class="typewriter-wrapper">
+                        <span id="typewriterText"></span>
+                        <span class="cursor-blink">|</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">HIPAA Certified · Lab Experience + Admin Expertise · Helping Healthcare
+                    Professionals Focus on Patients, Not Paperwork</p>
+
+                <div class="hero-trust-badges">
+                    <span><i class="fas fa-calendar-check"></i> Appointment Scheduling</span>
+                    <span><i class="fas fa-comments"></i> Patient Communication</span>
+                    <span><i class="fas fa-file-medical"></i> EHR</span>
+                    <span><i class="fas fa-shield-alt"></i> HIPAA Compliance</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-ripple">Book a Discovery Call</a>
+                    <a href="#services" class="btn btn-outline">View Services</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Image Frame -->
+            <div class="hero-image-right">
+                <div class="hero-image-new-frame tilt-card">
+                    <div class="hero-image-new-inner">
+                        <img src="./assets/blessing.jpg" alt="Ibeh Blessing" />
+                        <div class="hero-image-new-overlay"></div>
+                    </div>
+                    <div class="hero-image-new-ring"></div>
+                    <div class="hero-image-new-dots"></div>
+                    <div class="hero-image-new-badge">✦ Medical VA</div>
+                </div>
+
+                <!-- STATS BAR -->
+                <div class="hero-stats-bar">
+                    <div class="stat-item">
+                        <strong class="counter" data-target="6">0</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong class="counter" data-target="500" data-suffix="+">0</strong>
+                        <span>Connections</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong class="counter" data-target="11">0</strong>
+                        <span>Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text-side">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">From the Lab to <span>Your Practice</span></h2>
+                    <p>I have stood in a medical laboratory collecting patient samples and running tests. I know what it
+                        feels like to work in a fast-paced clinical environment where accuracy matters and there is no
+                        room for error.</p>
+                    <p>That experience shaped me. And now I am bringing it into a new chapter as a <strong>Medical
+                            Virtual Assistant</strong>.</p>
+                    <p>I help healthcare professionals like doctors, clinic owners, nurses, and telehealth providers
+                        reclaim their time by handling the admin work that pulls them away from patient care.</p>
+                    <p>Unlike most VAs, I do not just understand the paperwork. I understand the work behind it.
+                        <strong>The labs. The patients. The pressure.</strong></p>
+                    <p style="font-weight: 600; color: var(--primary);">If you are a healthcare provider drowning in
+                        admin, let us talk. Send me a DM with the word <strong>"MEDICAL"</strong> and let us get you
+                        back to your patients.</p>
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px;">
+                        <a href="#contact" class="btn btn-primary btn-ripple">Book a Discovery Call</a>
+                        <a href="./assets/Blessing_Ibeh_Resume.pdf" download class="btn btn-download btn-ripple">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="about-highlights-cards">
+                    <div class="highlight-card">
+                        <i class="fas fa-user-md"></i>
+                        <h4>Medical Background</h4>
+                        <p>Real clinical experience in fast-paced lab environments with a deep understanding of
+                            healthcare workflows.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>HIPAA Certified</h4>
+                        <p>Proper training in patient privacy, data protection, and compliance standards for healthcare
+                            administration.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Admin + Clinical Expertise</h4>
+                        <p>Bridging the gap between healthcare operations and administrative support for seamless
+                            practice management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TOOLS (14 Tools) ===== -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <span class="section-tag">My Toolbox</span>
+            <h2 class="section-title">Tools I <span>Master</span></h2>
+            <div class="tools-grid">
+                <div class="tool-card"><i class="fas fa-google"></i><span>Google Workspace</span></div>
+                <div class="tool-card"><i class="fas fa-brain"></i><span>Notion</span></div>
+                <div class="tool-card"><i class="fab fa-trello"></i><span>Trello</span></div>
+                <div class="tool-card"><i class="fab fa-canva"></i><span>Canva</span></div>
+                <div class="tool-card"><i class="fab fa-slack"></i><span>Slack</span></div>
+                <div class="tool-card"><i class="fas fa-video"></i><span>Zoom</span></div>
+                <div class="tool-card"><i class="fab fa-asana"></i><span>Asana</span></div>
+                <div class="tool-card"><i class="fas fa-tasks"></i><span>ClickUp</span></div>
+                <div class="tool-card"><i class="fas fa-chart-line"></i><span>Monday.com</span></div>
+                <div class="tool-card"><i class="fas fa-crm"></i><span>HubSpot</span></div>
+                <div class="tool-card"><i class="fas fa-calendar-alt"></i><span>Calendly</span></div>
+                <div class="tool-card"><i class="fas fa-clock"></i><span>Toggl</span></div>
+                <div class="tool-card"><i class="fas fa-globe"></i><span>World Time Buddy</span></div>
+                <div class="tool-card"><i class="fas fa-file-medical"></i><span>EHR Systems</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Medical <span>Services</span></h2>
+                <p class="section-sub">Comprehensive administrative and operational support for healthcare
+                    professionals.</p>
+            </div>
+
+            <div class="services-grid-new">
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Inbox Management</h3>
+                    <p>Organize, prioritize, and respond to emails for smooth communication and zero missed
+                        opportunities.</p>
+                    <span class="service-new-number">01</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Calendar Coordination</h3>
+                    <p>Schedule meetings, send reminders, and manage your time efficiently across multiple time zones.
+                    </p>
+                    <span class="service-new-number">02</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-file-medical"></i></div>
+                    <h3>EHR & Medical Records</h3>
+                    <p>Professional management of electronic health records and medical documentation with accuracy.</p>
+                    <span class="service-new-number">03</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-notes-medical"></i></div>
+                    <h3>Medical Transcription</h3>
+                    <p>Accurate transcription of medical notes, patient records, and clinical documentation.</p>
+                    <span class="service-new-number">04</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Insurance Verification</h3>
+                    <p>Insurance verification, prior authorization support, and billing coordination for smooth claims.
+                    </p>
+                    <span class="service-new-number">05</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-users"></i></div>
+                    <h3>Patient Communication</h3>
+                    <p>Professional follow-ups, appointment scheduling, and compassionate patient support.</p>
+                    <span class="service-new-number">06</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Document Creation</h3>
+                    <p>Professional presentations, reports, and proposals formatted to impress clients and stakeholders.
+                    </p>
+                    <span class="service-new-number">07</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Entry & Organization</h3>
+                    <p>Accurate database management and file organization that makes information easy to find and use.
+                    </p>
+                    <span class="service-new-number">08</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>HIPAA Compliance</h3>
+                    <p>HIPAA-aware administrative support ensuring patient privacy and data protection standards.</p>
+                    <span class="service-new-number">09</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="experience-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've <span>Worked</span></h2>
+            </div>
+
+            <div class="experience-grid-new">
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Project Manager</h3>
+                            <span class="exp-new-company">Excelerate · Internship</span>
+                            <span class="exp-new-date">May 2026 – Present · 3 mos</span>
+                        </div>
+                        <p>Project coordination and management across various initiatives, ensuring timely delivery and
+                            team alignment.</p>
+                        <div class="exp-new-skills">
+                            <span>Project Management</span>
+                            <span>Coordination</span>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Founder & Operations Manager</h3>
+                            <span class="exp-new-company">Borganicskincare · Full-time</span>
+                            <span class="exp-new-date">Aug 2020 – Present · 6 yrs</span>
+                        </div>
+                        <p>Founded and managed an online skincare business handling daily operations, customer
+                            management, and business growth strategies.</p>
+                        <div class="exp-new-skills">
+                            <span>Business Operations</span>
+                            <span>Customer Management</span>
+                            <span>Google Workspace</span>
+                            <span>Scheduling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Virtual Assistant</h3>
+                            <span class="exp-new-company">Afriment · Internship</span>
+                            <span class="exp-new-date">May 2026 – Jun 2026 · 2 mos</span>
+                        </div>
+                        <p>Provided administrative support, managed communications, and assisted with client
+                            coordination.</p>
+                        <div class="exp-new-skills">
+                            <span>Admin Support</span>
+                            <span>Client Communication</span>
+                            <span>Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Medical Laboratory Assistant</h3>
+                            <span class="exp-new-company">OAU Medical Laboratory · Full-time</span>
+                            <span class="exp-new-date">Aug 2020 – Aug 2022 · 2 yrs 1 mo</span>
+                        </div>
+                        <p>Assisted in conducting laboratory tests, maintaining safety standards, and ensuring accurate
+                            patient sample processing.</p>
+                        <div class="exp-new-skills">
+                            <span>Laboratory Safety</span>
+                            <span>Health & Safety Compliance</span>
+                            <span>Patient Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK (Case Studies) ===== -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work-header">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Tasked. Managed. <span>Delivered.</span></h2>
+                <p class="section-sub">Click any card to view the full case study.</p>
+            </div>
+
+            <div class="work-grid-new">
+                <div class="work-new" data-case="webinar">
+                    <div class="work-new-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Webinar Launch System</h3>
+                    <p>Trello board for Skincare Formulation 101 launch</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+                <div class="work-new" data-case="slack">
+                    <div class="work-new-icon"><i class="fab fa-slack"></i></div>
+                    <h3>Team Workspace Setup</h3>
+                    <p>Slack workspace & communication guide</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+                <div class="work-new" data-case="tracker">
+                    <div class="work-new-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Project Tracking System</h3>
+                    <p>20-task tracker with colour coding</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CASE STUDY MODAL ===== -->
+    <div class="modal-overlay" id="caseModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ===== WORK SAMPLES (9 Items - Auto Smooth Carousel) ===== -->
+    <section class="work-samples" id="work-samples">
+        <div class="container">
+            <span class="section-tag">Work Samples</span>
+            <h2 class="section-title">My <span>Recent Work</span></h2>
+            <p class="section-sub">A glimpse into projects I've delivered for clients.</p>
+
+            <div class="work-samples-carousel-wrapper">
+                <div class="work-samples-track" id="workSamplesTrack">
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/HIPAA_compliance_checklist.png" alt="HIPAA Compliance Checklist" />
+                            <div class="work-sample-overlay">
+                                <h3>HIPAA Compliance Checklist</h3>
+                                <p>Healthcare · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/team_setup.png" alt="Workspace Setup" />
+                            <div class="work-sample-overlay">
+                                <h3>Team Workspace Setup</h3>
+                                <p>Slack · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/medical_inventory_tracker.png" alt="Medical Inventory Tracker" />
+                            <div class="work-sample-overlay">
+                                <h3>Medical Inventory Tracker</h3>
+                                <p>Google Sheets · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/EHR_mgt_sys.png" alt="EHR Management" />
+                            <div class="work-sample-overlay">
+                                <h3>EHR Management System</h3>
+                                <p>Medical Records · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/calendar_cordination.png" alt="Calendar Coordination" />
+                            <div class="work-sample-overlay">
+                                <h3>Calendar Coordination</h3>
+                                <p>Multi-Timezone · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/document_creation.png" alt="Document Creation" />
+                            <div class="work-sample-overlay">
+                                <h3>Document Creation</h3>
+                                <p>Reports · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/patient_scheduling.png" alt="Patient Scheduling" />
+                            <div class="work-sample-overlay">
+                                <h3>Patient Scheduling & Calendar</h3>
+                                <p>Healthcare · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/medical_billing_insurance.png" alt="Medical Billing" />
+                            <div class="work-sample-overlay">
+                                <h3>Medical Billing & Insurance</h3>
+                                <p>Healthcare · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/project_tracker.png" alt="Project Tracker" />
+                            <div class="work-sample-overlay">
+                                <h3>Project Tracker System</h3>
+                                <p>Google Sheets · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/HIPAA_compliance_checklist.png" alt="HIPAA Compliance Checklist" />
+                            <div class="work-sample-overlay">
+                                <h3>HIPAA Compliance Checklist</h3>
+                                <p>Healthcare · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS (8 Items) ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span>Say</span></h2>
+            </div>
+
+            <div class="testimonial-carousel-wrapper">
+                <div class="testimonial-carousel-track" id="testimonialCarouselTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Blessing completely transformed how I manage my inbox. What used to take me 2 hours every
+                                morning now takes 30 minutes. She's professional, detail-oriented, and genuinely cares
+                                about quality.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">E</div>
+                                <div>
+                                    <strong>Emmanuel</strong>
+                                    <span>CEO, Benevolent Designs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>I was skeptical about handing over my calendar, but Blessing made the transition
+                                seamless. She anticipates conflicts before they happen and always communicates
+                                proactively.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">D</div>
+                                <div>
+                                    <strong>Dennis Eghaghe</strong>
+                                    <span>CEO, Dee & Dee Ltd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>The research report Blessing delivered was thorough, well-structured, and saved us hours
+                                of work. She understood the brief immediately and delivered ahead of schedule.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">J</div>
+                                <div>
+                                    <strong>Joyce Ingebedion</strong>
+                                    <span>Client Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Blessing's attention to detail and proactive communication made working with her a
+                                breeze. She handled our patient scheduling and follow-ups with professionalism and care.
+                            </p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">S</div>
+                                <div>
+                                    <strong>Dr. Sarah</strong>
+                                    <span>Clinic Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>She quickly understood our medical practice's workflow and implemented systems that saved
+                                us hours each week. Her HIPAA compliance knowledge gave us peace of mind.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">M</div>
+                                <div>
+                                    <strong>Dr. Michael</strong>
+                                    <span>Telehealth Provider</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Blessing took over our medical records management and transformed chaos into order. Her
+                                experience in the lab gave her a unique understanding of our clinical needs.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">A</div>
+                                <div>
+                                    <strong>Dr. Amina</strong>
+                                    <span>Hospital Administrator</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>I was amazed at how seamlessly Blessing integrated with our team. She handled insurance
+                                verification and patient follow-ups with such efficiency that our practice ran smoother
+                                than ever.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">K</div>
+                                <div>
+                                    <strong>Dr. Kunle</strong>
+                                    <span>GP Practice Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Her background in medical laboratory work sets her apart from other VAs. She understands
+                                the urgency and accuracy required in healthcare. A true asset to our practice.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">O</div>
+                                <div>
+                                    <strong>Dr. Olamide</strong>
+                                    <span>Medical Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate first 3 for seamless loop -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Blessing completely transformed how I manage my inbox. What used to take me 2 hours every
+                                morning now takes 30 minutes. She's professional, detail-oriented, and genuinely cares
+                                about quality.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">E</div>
+                                <div>
+                                    <strong>Emmanuel</strong>
+                                    <span>CEO, Benevolent Designs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-carousel-dots" id="testimonialDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <span class="section-tag">Certifications</span>
+            <h2 class="section-title">Professional <span>Certifications</span></h2>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certified Virtual Assistant Professional</h3>
+                    <p>Comprehensive training in administrative support, client management, and business tools.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <h3>Google Workspace Certification</h3>
+                    <p>Advanced proficiency in Gmail, Drive, Docs, Sheets, Slides, and collaborative workspace tools.
+                    </p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-user-md"></i></div>
+                    <h3>Walmart Pharmacy Technician Simulation</h3>
+                    <p>Forage · Issued Jun 2026 · Patient communication, privacy, and pharmacy operations.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>HIPAA Associate Certification</h3>
+                    <p>Alison · Issued Jun 2026 · HIPAA compliance, patient privacy, and healthcare data protection.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Entrepreneurship & Small Business Course</h3>
+                    <p>Jobberman · Issued Apr 2026 · Business management and entrepreneurial skills.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Soft Skills for Career Success</h3>
+                    <p>Arifu · Professional development and workplace communication.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Gig Work Mastery Course</h3>
+                    <p>Jobberman · Issued Apr 2026 · Global freelancing and remote work mastery.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-file-powerpoint"></i></div>
+                    <h3>Microsoft PowerPoint Certification</h3>
+                    <p>Coursera · Issued Dec 2025 · Advanced presentation design and formatting.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h3>Introduction to Cybersecurity</h3>
+                    <p>UNICEF Nigeria · Issued Dec 2024 · Foundational cybersecurity awareness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORKFLOW ===== -->
+    <section class="workflow" id="workflow">
+        <div class="container">
+            <span class="section-tag">My Process</span>
+            <h2 class="section-title">My <span>Workflow</span></h2>
+            <p class="section-sub">Every engagement follows a proven process designed to deliver consistent results.</p>
+
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="workflow-number">01</div>
+                    <h3>Discovery</h3>
+                    <p>I start by understanding your business, pain points, and preferred communication style to ensure
+                        seamless integration.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">02</div>
+                    <h3>Execution</h3>
+                    <p>Tasks are completed with attention to detail, following established systems or creating new ones
+                        as needed.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">03</div>
+                    <h3>Reporting</h3>
+                    <p>Regular updates keep you informed without overwhelming your inbox, using your preferred format
+                        and frequency.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">04</div>
+                    <h3>Review</h3>
+                    <p>Continuous improvement through feedback ensures our collaboration becomes more effective over
+                        time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY WORK WITH ME ===== -->
+    <section class="why-work" id="why-work">
+        <div class="container">
+            <span class="section-tag">Why Work With Me</span>
+            <h2 class="section-title">Why <span>Choose Me</span></h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Reliable & Proactive</h3>
+                    <p>Anticipating needs and solving problems before they arise.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Clear Communication</h3>
+                    <p>Consistent, transparent, and professional communication always.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick, efficient delivery without compromising quality.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Flexible to Your Workflow</h3>
+                    <p>Adaptable to your systems, tools, and preferred way of working.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Committed to Your Success</h3>
+                    <p>Your goals are my priority — I'm invested in your growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT (with ALL links updated) ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <span class="section-tag">Connect</span>
+                    <h2 class="section-title">Let's <span>Simplify Your Workflow</span></h2>
+                    <p>Ready to reclaim your time and focus on what you do best? I'm here to handle the details so you
+                        can concentrate on growing your practice.</p>
+                    <p style="font-weight: 500; color: var(--primary);">Whether you need ongoing support or help with a
+                        specific project, I'd love to learn about your needs and explore how we can work together.</p>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/ibeh-blessing-b35711185" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/va_business_support" target="_blank"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1E2XLDdvGb/" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/ibehb_" target="_blank" aria-label="X (Twitter)"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/2348148538397" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:blessingibeh736@gmail.com" target="_blank" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://calendly.com/blessingibeh736/strategy-discovery-call" target="_blank"
+                            aria-label="Calendly"><i class="fas fa-calendar-plus"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <!-- 👇 BOOKING / SCHEDULE BUTTON -->
+                    <div style="margin-bottom: 16px; text-align: center;">
+                        <a href="https://calendly.com/blessingibeh736/strategy-discovery-call" target="_blank"
+                            class="btn btn-primary btn-block"
+                            style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 36px; border-radius: 40px; font-weight: 600; font-size: 0.85rem; text-decoration: none; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); background: linear-gradient(135deg, var(--primary), var(--azure)); color: var(--white); border: none; cursor: pointer; width: 100%; box-shadow: 0 4px 16px rgba(46, 94, 142, 0.2);">
+                            <i class="fas fa-calendar-check"></i> Schedule a Discovery Call
+                        </a>
+                    </div>
+
+                    <!-- 👇 CONTACT FORM -->
+                    <form id="contactForm" action="https://formspree.io/f/mlgqbzoq" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email address" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"
+                                placeholder="Tell me about your practice and what support you need..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+
+                    <!-- 👇 DOWNLOAD RESUME BUTTON -->
+                    <div style="margin-top: 16px; text-align: center;">
+                        <a href="./assets/Blessing_Ibeh_Resume.pdf" download class="btn btn-download btn-block"
+                            style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 36px; border-radius: 40px; font-weight: 600; font-size: 0.85rem; text-decoration: none; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 1.5px solid var(--primary); color: var(--primary); background: transparent; width: 100%;">
+                            <i class="fas fa-download"></i> Download Resume / CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Ibeh Blessing · Medical Virtual Assistant</p>
+            <p class="footer-tagline">Helping Healthcare Professionals Focus on Patients, Not Paperwork.</p>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
